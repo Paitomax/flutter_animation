@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animation/src/fade_route.dart';
 import 'package:flutter_animation/src/home/home_bloc.dart';
 import 'package:flutter_animation/src/home/home_event.dart';
 import 'package:flutter_animation/src/home/home_state.dart';
@@ -70,9 +71,7 @@ class HomePageState extends State<HomePage> {
       transitionOnUserGestures: true,
       child: GestureDetector(
         onTap: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return ItemDetailPage(item: item);
-          }));
+          Navigator.push(context, FadeRoute(page: ItemDetailPage(item: item)));
         },
         child: Container(
           decoration: BoxDecoration(
