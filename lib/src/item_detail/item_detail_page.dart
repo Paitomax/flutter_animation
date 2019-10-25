@@ -2,18 +2,18 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animation/src/home/models/list_item.dart';
 
-class AnotherPage extends StatefulWidget {
+class ItemDetailPage extends StatefulWidget {
   final ListItem item;
 
-  const AnotherPage({Key key, this.item}) : super(key: key);
+  const ItemDetailPage({Key key, this.item}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() {
-    return AnotherPageState();
+    return ItemDetailPageState();
   }
 }
 
-class AnotherPageState extends State<AnotherPage> {
+class ItemDetailPageState extends State<ItemDetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

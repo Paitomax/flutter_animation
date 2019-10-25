@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animation/src/another_page/another_page.dart';
 import 'package:flutter_animation/src/home/home_bloc.dart';
 import 'package:flutter_animation/src/home/home_event.dart';
 import 'package:flutter_animation/src/home/home_state.dart';
 import 'package:flutter_animation/src/home/models/list_item.dart';
+import 'package:flutter_animation/src/item_detail/item_detail_page.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class HomePage extends StatefulWidget {
@@ -71,7 +71,7 @@ class HomePageState extends State<HomePage> {
       child: GestureDetector(
         onTap: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return AnotherPage(item: item);
+            return ItemDetailPage(item: item);
           }));
         },
         child: Container(
